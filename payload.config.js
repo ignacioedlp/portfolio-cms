@@ -6,7 +6,7 @@ import Skills from "./collections/Skills";
 import InformationUsers from "./collections/InformationUsers";
 
 export default buildConfig({
-  serverURL: "http://localhost:3000",
+  serverURL: process.env.URL_DOMAIL,
   admin: {
     user: Users.slug,
   },
