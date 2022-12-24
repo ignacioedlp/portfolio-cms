@@ -7,6 +7,7 @@ import InformationUsers from "./collections/InformationUsers";
 
 export default buildConfig({
   serverURL: process.env.URL_DOMAIL,
+  cors: "*",
   admin: {
     user: Users.slug,
   },
