@@ -1,12 +1,12 @@
-const express = require('express');
-const payload = require('payload');
+const express = require("express");
+const payload = require("payload");
 
-require('dotenv').config();
+require("dotenv").config();
 const app = express();
 
 // Redirect root to Admin panel
-app.get('/', (_, res) => {
-  res.redirect('/admin');
+app.get("/", (_, res) => {
+  res.redirect("/admin");
 });
 
 // Initialize Payload
